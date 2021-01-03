@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+#collapsible{
+	padding: 0px;
+}
+#collapsible ol li {
+    list-style:circle;
+}
+#collapsible li {
+    list-style:none;
+}
+#collapsible  li label{
+	padding: 10px;
+	display: block;
+	line-height: 2;
+	font-size:22px;
+}
+#collapsible  li label:hover{
+	background-color:#00224b;
+	color:white;
+	cursor:pointer
+}
+#collapsible  input[type='checkbox']:checked + label{
+	background-color:#00224b;
+	color:white;
+	cursor:pointer
+}
+#collapsible input[type='checkbox']{
+	display: none;
+}
+#collapsible .content{
+	display:none;
+	font-size:20px;
+	border-collapse:collapse;
+}
+#collapsible input[type='checkbox']:checked + label + .content{
+	display:block;
+}
+.smalltable{
+	border-collapse:collapse;
+}
+.smalltable td{
+	padding-bottom:0 !important;
+	padding-top: 0 !important;
+}
+.arrow {
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border-bottom:2px solid #00224b;
+	border-right:2px solid #00224b;
+	transform: rotate(-45deg);
+	margin:0px 15px 0px 10px;
+}
+label:hover .arrow{
+	border-color:#fff
+}
+#collapsible input[type='checkbox']:checked + label > .arrow{
+	transform:rotate(45deg);
+	margin-bottom:5px;
+	border-color:#fff
+}

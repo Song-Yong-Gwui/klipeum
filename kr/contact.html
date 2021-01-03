@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>연락처</title>
+<link href='https://fonts.googleapis.com/css?family=Nanum+Gothic' rel='stylesheet' type='text/css'>
+<link href="../css/korean.css" rel="stylesheet" type="text/css" />
+<link href="../css/contact.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="../images/logo.png">
+<style>tr {height: 25%;}@media screen and (max-width: 750px) {
+iframe{
+    display:none;
+  }
+td{width:45%}
+#details{width:55%}
+}
+</style>
+</head>
+
+<body>
+<div id="nav" class="nav">
+	<table>
+		<tr>
+			<td style="width:45px;background-color:#00224b"><span class="dot" onclick="window.open('home.html','_self')"></span></td>
+            <td style="text-align:left;width:36%;background-color:#00224b"><a href="home.html">클리페움</a></td>
+            <td><a href="about.html">브렌드 스토리</a></td>
+			<td><a href="products.html">제품소개</a></td>
+			<td><a href="partners.html">사업파트너</a></td>
+			<td><a href="contact.html">연락처</a></td>
+            <td style="width: 50px;"><a href="../eng/contact.html"style="font-size:14px;font-family:Verdana">ENG</a></td>
+		</tr>
+	</table>
+</div>
+<div id="header" class="header">
+	<p>연락처</p>
+</div>
+
+<div id="info" class="info">
+<table width="50%">
+  <tr>
+  <td colspan="3"><p id="headingsmall">연락처</p></td>
+  </tr>
+  <tr>
+  <td width="12%"><p>주소</p></td>
+  <td width="38%" id="details"><p>경기도 안양시 동안구 시민대로 161, 안양무역센터 1715호</p></td>
+  <td width="50%" rowspan="3"><iframe src="https://www.google.com/maps/d/u/3/embed?mid=1tVvjmMYMkUUxknGLvQAXLMM31McedJnR" width="100%" height="400px" max-width="100%"></iframe></td>
+  </tr>
+  <tr>
+  <td><p>전화번호</p></td>
+  <td><p>+82 10-9593-4969</p></td>
+  </tr>
+  <tr>
+  <td><p>이메일</p></td>
+  <td><p><a href="mailto:sales@klipeum.com">sales@klipeum.com</a></p></td>
+  </tr>
+</table>
+</div>
+
+<div id="info" class="info" style="border-top:5px dotted #00224b">
+<p id="headingsmall">연락하기</p>
+<form action="mailto:sales@klipeum.com?subject=연락하기" method="post"enctype="text/plain">
+	<input type="text" id="name" name="name" placeholder="이름" required="required">
+    <input type="text" id="company" name="company" placeholder="회사">
+    <input type="text" id="phone" name="phone" placeholder="전화번호">
+    <input type="email" id="email" name="email" placeholder="이메일" required="required">
+    <textarea type="text" id="message" name="message" placeholder="주요사항" style="height:100px" required="required"></textarea>
+    <input type="submit" value="제출">
+</form>
+</div>
+<div id="footer"; class="footer">
+	<table><tr><td>
+            <p>&#169 클리페움 <script>document.write(new Date().getFullYear())</script></p>
+  </td></tr></table>
+</div>
+
+</body>
+</html>
